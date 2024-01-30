@@ -1,0 +1,510 @@
+
+@font-face {
+    font-family: "PSB";
+    src: url(font/FontsFree-Net-Poppins-Light.ttf);
+  }
+@font-face {
+    font-family: "PSB-M";
+    src: url(font/PoppinsMedium-1JPv\ \(1\).otf);
+}
+  
+  body {
+    margin: 0;
+    font-family: "PSB";
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  nav {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+  }
+  
+  nav a:hover {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  
+
+  .slideshow-container {
+    max-width: 100%;
+    height: 300px; 
+    position: relative;
+    margin: auto;
+  }
+  
+
+  .mySlides {
+    display: none;
+  }
+  .mySlides img{
+    filter: brightness(80%);
+  }
+  
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+
+  .mySlides img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+
+  .header {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; 
+  }
+  
+  .header h1 {
+    color: rgb(255, 255, 255);
+    font-family: "PSB-M";
+    font-size: 100px;
+    margin-bottom: -7%;
+  }
+  .header p{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+  }
+
+  .header button {
+    padding: 10px 20px;
+    background-color: #020202;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; 
+    font-family: "PSB-M";
+    width: 35%;
+    margin-top: 8%;
+  }
+
+  .header button:hover {
+    font-size: 12px; /* Increase font size on hover */
+  }
+  .home {
+    margin-top: 15%;
+  }
+
+  .home h1 {
+    color: #000;
+    font-family: "PSB-M";
+    font-size: 60px;
+    margin-left: 5%;
+  }
+.content-boxes {
+    margin-top: -5%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative; 
+  }
+  .content-boxes h2{
+    margin-top: 5%;
+    font-family: "PSB-M";
+  }
+  .content-boxes P{
+    margin-top: 10%;
+  }
+  
+  
+  .content-box {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    text-align: center;
+    height: 600px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 5%;
+  }
+ 
+  .content-box:nth-child(1) {
+    background-color: white; 
+  }
+  
+  .content-box:nth-child(2) {
+    background-color: #ccc; 
+  }
+  
+  .content-box:nth-child(3) {
+    background-color: rgb(57, 57, 57); 
+  }
+  
+  .content-box h2,
+  .content-box p {
+    color: #333;
+  }
+ 
+ .content-box-image {
+  max-width: 80%;
+  height: auto; 
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  
+}
+
+.content-box:hover {
+  transform: scale(1.1);
+}
+.about {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; 
+}
+
+.about-content {
+  display:flex;
+  width: 80%;
+}
+
+.about-box {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: justify;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.about-logo {
+  margin-left: 30px;
+}
+
+
+.about h1 {
+  font-family: "PSB-M";
+  font-size: 50px;
+  margin-top: 2%;
+  margin-bottom: -7%;
+}
+
+.about h2 {
+  font-family: "PSB-M";
+  font-size: 25px;
+  margin-top: 5%;
+}
+
+.services {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  margin-top: 2px;
+}
+.services h2 {
+  color: #000;
+  font-family: "PSB-M";
+  font-size: 60px;
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: -2%;
+}
+.services-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.service-item {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  background-color: #2a2323; 
+  height: 94vh; 
+}
+
+.service-item h3 {
+  color: #ffffff;
+  font-family: "PSB-M"; 
+  font-size: x-large;
+}
+
+.service-item p {
+  color: #ffffff; 
+  padding: 5%;
+  text-align: center;
+}
+.slide-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.services-slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff; 
+}
+
+
+.services-prev,
+.services-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.services-prev {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.services-next {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+
+.services-prev:hover,
+.services-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#contact {
+  background-color: #f8f8f8; 
+  padding: 20px;
+  text-align: center;
+  color: #333;
+  margin-top: -5%;
+}
+
+#contact h2 {
+  color: #000;
+  font-family: "PSB-M";
+  font-size: 60px;
+  margin-right: 10px;
+  margin-bottom: -2%;
+}
+
+#contact p {
+  margin-top: 20%;
+  color: #1b1b1b; 
+  width: 80%;
+  margin-left: 15%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 48%;
+}
+
+.right-content {
+  width: 48%; 
+}
+
+form {
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 70%;
+  font-family: "PSB";
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #222; 
+  font-weight: 800;
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  font-family: "PSB";
+}
+.header-button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; 
+  font-family: "PSB-M";
+}
+
+.header-button:hover {
+  background-color: #555;
+}
+footer {
+  background-color: black; 
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.social-icons {
+  font-size: 24px;
+  margin-right: 10px;
+  color: white;
+}
+
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.social-icons i {
+  margin: 0 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: -100%;
+  top: -50%;
+  width: 300%;
+  height:auto;
+  overflow:hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px;
+  margin: 0px;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 2px solid #000;
+  width: 40%;
+  overflow-y:hidden;
+  text-align: center;
+  color: #000;
+  align-items: center; 
+  justify-content: center; 
+}
+
+
+.modal-button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px; 
+  font-family: "PSB-M";
+  font-size: 12px;
+}
+
+.modal-button:hover {
+  background-color: #555;
+  font-size: 12px;
+}
+.modal-content p{
+  font-family: "PSB";
+  font-weight: lighter;
+  color: #000;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #555;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.coin-image {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.modal-button {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.modal-button:hover {
+  background-color: #555;
+}
+
+body.modal-open {
+  overflow: hidden;
+}

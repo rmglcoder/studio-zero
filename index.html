@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>studiozero.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/confetti.min.js"></script>
+
+</head>
+<body>
+
+
+<nav>
+
+  <div>
+    <img src="img/logo.png" alt="Logo" style="height: 40px;">
+  </div>
+
+ 
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="img/header_1.png">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/header_2.png">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/header_3.png" style="width:100%">
+  </div>
+
+ 
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+
+<div class="header">
+  <h1>studio zero.</h1>
+  <p>Elevate Spaces, Transform Lives: Where Design Meets Inspiration.</p>
+ 
+<button id="makeHomeButton" class="header-button">Make Home</button>
+
+
+<div id="myModal" class="modal">
+  
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img src="img/about-logo.png" alt="Official Seal" class="coin-image">
+    <p>Dear Esteemed Client,</p>
+    <p>We are delighted to inform you that our expert team at Studio Zero is fully committed to turning your dream home into a reality. Your aspirations for an exceptional living space are about to take a significant step forward.</p>
+    <p>With our dedicated services, we present to you this symbolic token—a representation of our commitment to excellence and the realization of your vision.</p>
+    <p>This magical token is more than just a coin; it signifies the beginning of a transformative journey where design meets inspiration. Allow us to assist you in crafting a home that reflects your individual style and elevates your living experience.</p>
+    <p>Feel free to reach out to us and embark on this exciting venture. Let Studio Zero be your trusted partner in creating spaces that inspire and elevate.</p>
+    
+    <button  onclick="commenceJourney()" class="modal-button">Commence the Journey</button>
+  </div>
+</div>
+
+</div>
+
+<div class="home" id="home">
+  <h1>home.</h1>
+</div>
+<br>
+
+<div class="content-boxes"> 
+  <div class="content-box">
+    <h2>Residential Designs</h2>
+    <img src="img/residential.png" alt="" class="content-box-image"><br>
+    <p>Transform your home into a haven with our exquisite residential interior designs. Our team of experts combines functionality with aesthetics to create spaces that reflect your style and personality. Whether it's a cozy living room, a stylish kitchen, or a serene bedroom, we bring your vision to life.</p>
+  </div>
+
+  <div class="content-box">
+    <h2>Commercial Spaces</h2>
+    <img src="img/commercial.png" alt="" class="content-box-image" ><br>
+    <p>Elevate your business environment with our innovative commercial interior solutions. From modern office layouts to captivating retail spaces, our designs enhance productivity and leave a lasting impression. Collaborate with us to create a workspace that inspires creativity and professionalism.</p>
+  </div>
+
+  <div class="content-box">
+    <h2 style="color:white">Bespoke Designs</h2>
+    <img src="img/bespoke.png" alt="" class="content-box-image"><br>
+    <p style="color:white">Experience the luxury of personalized interior designs tailored to your unique preferences. Our bespoke design services cater to clients with discerning taste, ensuring that every detail is curated to perfection. Let us turn your vision into reality, delivering spaces that are both functional and breathtaking.</p>
+  </div>
+</div>
+
+
+<div id="about" class="about">
+  <div class="about-content">
+    <div class="about-box">
+      <h1>studio zero.</h1>
+      <h2>about us</h2>
+      <p>Discover the captivating story behind Studio Zero. Our journey is rooted in a passion for crafting exceptional spaces that go beyond mere aesthetics—they resonate with the very essence of our clients.</p>
+      
+      <p>At Studio Zero, creativity is not just a skill; it's a way of life. Our team of dedicated professionals brings a blend of innovation and expertise to every project, ensuring a unique and personalized touch that reflects your individual style and vision.</p>
+      
+      <p>Explore the narrative of Studio Zero—a narrative woven with creativity, dedication, and a commitment to excellence. Each project is an opportunity to transform spaces into living works of art that leave a lasting impression.</p>
+
+      <p>Meet the faces behind the designs—individuals driven by a shared passion for turning dreams into reality. Our diverse team brings together talents from various disciplines, creating a dynamic synergy that breathes life into every project.</p>
+
+      <p>Embark on this journey with us as we redefine the boundaries of design, one space at a time. Studio Zero is more than a design studio; it's a canvas where your aspirations meet our expertise, resulting in spaces that inspire and elevate.</p>
+    </div>
+    <div class="about-logo"><br>
+      <img src="img/about-logo.png" alt="Logo" style="height: 80%;">
+    </div>
+  </div>
+</div>
+
+<div id="services" class="services">
+  <h2>services.</h2>
+  <div class="services-content">
+    <div class="service-item">
+      <h3>Regal Interiors</h3>
+      <p><span style="font-style: italic; font-weight: bold">Elegance Redefined: </span> Experience the epitome of refined luxury with Regal Interiors. Our expert designers blend timeless 
+        sophistication with contemporary trends to create living spaces that exude opulence. From classic aesthetics to modern chic, 
+        we transform your vision into a regal reality.</p><br>
+      <div class="services-slideshow-container">
+        <button class="services-prev" onclick="plusSlides(-1, 'regalSlides')">&#10094;</button>
+    
+        <div class="services-mySlides regalSlides">
+          <img src="img/service1.jpg" alt="Service 4" class="slide-img">
+        </div>
+    
+        <div class="services-mySlides regalSlides">
+          <img src="img/service2.jpeg" alt="Service 5" class="slide-img">
+        </div>
+    
+        <div class="services-mySlides regalSlides">
+          <img src="img/service3.png" alt="Service 6" class="slide-img">
+        </div>
+    
+        <button class="services-next" onclick="plusSlides(1, 'regalSlides')">&#10095;</button>
+      </div>
+    </div>
+  
+    <div class="service-item">
+      <h3>Sophisticate Designs</h3>
+      <p><span style="font-style: italic; font-weight: bold">Where Style Meets Precision: </span> Sophisticate Designs is synonymous with precision and sophistication in interior aesthetics. 
+        Our team of seasoned designers meticulously crafts each space, marrying functionality with aesthetics. 
+        Immerse yourself in the world of tailored sophistication, where every detail is an expression of timeless style.</p>
+      <div class="services-slideshow-container">
+        <button class="services-prev" onclick="plusSlides(-1, 'sophisticateSlides')">&#10094;</button>
+    
+        <div class="services-mySlides sophisticateSlides">
+          <img src="img/service4.png" alt="Service 4" class="slide-img">
+        </div>
+    
+        <div class="services-mySlides sophisticateSlides">
+          <img src="img/service5.jpg" alt="Service 5" class="slide-img">
+        </div>
+    
+        <div class="services-mySlides sophisticateSlides">
+          <img src="img/service6.jpg" alt="Service 6" class="slide-img">
+        </div>
+    
+        <button class="services-next" onclick="plusSlides(1, 'sophisticateSlides')">&#10095;</button>
+      </div>
+    </div>
+  
+    <div class="service-item">
+      <h3>Prestige Living Spaces</h3>
+      <p><span style="font-style: italic; font-weight: bold">Crafting Exquisite Lifestyles:</span> Prestige Living Spaces is dedicated to crafting bespoke interiors that reflect your unique taste and elevate your lifestyle. 
+        Our designers curate personalized environments that seamlessly blend luxury, comfort, and functionality. 
+        Step into a world of prestige, where every corner tells a story of unparalleled design and craftsmanship.</p>
+      <div class="services-slideshow-container">
+        <button class="services-prev" onclick="plusSlides(-1, 'prestigeSlides')">&#10094;</button>
+    
+        <div class="services-mySlides prestigeSlides">
+          <img src="img/service7.jpg" alt="Service 8" class="slide-img">
+        </div>
+    
+        <div class="services-mySlides prestigeSlides">
+          <img src="img/service8.jpg" alt="Service 9" class="slide-img">
+        </div>
+    
+        <div class="services-mySlides prestigeSlides">
+          <img src="img/service9.jpg" alt="Service 10" class="slide-img">
+        </div>
+    
+        <button class="services-next" onclick="plusSlides(1, 'prestigeSlides')">&#10095;</button>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  
+</div>
+
+<div id="contact" class="contact">
+  <h2>contact.</h2>
+  
+  <div class="contact-content">
+
+    <div class="left-content">
+      <p>
+        <span style="font-weight: bold;">Studio Zero</span> is always ready to assist you. Whether you have a question, want to discuss a project, or just say hello, feel free to reach out to us.
+    
+
+      <br><br><br>
+      <i class="fas fa-map-marker-alt"></i> Address:<br>
+      123 Design Street<br>
+      Cityville, Makati City, Philippines
+
+      <br><br><br>
+      <i class="fas fa-phone"></i> Phone: (123) 456-7890<br>
+      <i class="fas fa-envelope"></i> Email: info@studiozero.com
+    </p>
+  </div>
+  
+    <div class="right-content">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+<footer>
+<div class="footer-content">
+  <p>&copy; 2024 Studio Zero. All rights RHEAserved.</p>
+  <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+</footer>
+</body>
+</html>
